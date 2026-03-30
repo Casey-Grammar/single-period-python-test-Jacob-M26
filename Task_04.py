@@ -18,8 +18,14 @@
 
 def expand_subject_codes(codes):
     # Write your code here
-    pass
-
+    subject_map = {
+        "ENG": "English",
+        "MAT": "Mathematics",
+        "SCI": "Science",
+        "HIS": "History",
+        "ART": "Art"
+    }
+    return [subject_map[code] for code in codes if code in subject_map]
 
 def main():
     user_input = input("Enter subject codes separated by commas: ")

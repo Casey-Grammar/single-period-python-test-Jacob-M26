@@ -8,7 +8,12 @@
 
 def extract_even_numbers(numbers):
     # Write your code here
-    pass
+    extract_even_numbers = []
+    for n in numbers:
+        if n % 2 == 0:
+            extract_even_numbers.append(n)
+            
+    return extract_even_numbers
 
 
 def main():
@@ -19,3 +24,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

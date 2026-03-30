@@ -10,7 +10,16 @@
 
 def count_vowels(text):
     # Write your code here
-    pass
+    vowels = "aeiou"
+    count_vowels = 0
+    
+    # Iterate through each character in the input string
+    for char in text.lower():
+        # Check if the character is in the vowel string
+        if char in vowels:
+            count_vowels += 1
+            
+    return count_vowels
 
 
 def main():
